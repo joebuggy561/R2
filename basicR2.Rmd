@@ -1,0 +1,78 @@
+---
+title: "basicinputinR"
+output: html_document
+date: "2022-07-15"
+---
+
+```{r}
+c(1,2,3,4)+2
+```
+
+```{r}
+c(1,2,3) - c(2,3,4)
+```
+
+```{r}
+c(1,2,3)*c(2,3,4)
+```
+
+```{r}
+c(1,2,3)/c(2,3,4)
+```
+
+```{r}
+c(1,2,3) * 2
+```
+
+```{r}
+c(1,2,3) ^ 2
+```
+
+```{r}
+c(1,2,3) ^ c(2,3,4)
+```
+
+```{r}
+c(1,2,3,14) %% 2
+```
+
+```{r}
+c(a = 1, b =2 , c = 3) + c(b = 2, c = 3, d =4)
+```
+```{r}
+c(a = 1, b = 2, 3) + c(b =2, c =3, d = 4)
+```
+
+```{r}
+matrix(c(1,2,3,2,3,4,5,6,3), ncol  = 3)
+```
+
+```{r}
+matrix(c(1,2,3,2,3,4,5,6,3), nrow = 3, byrow = TRUE, dimnames = list(c("r1", "r2", "r3"), c("c1", "c2", "c3")))
+```
+
+
+```{r}
+m1 <- matrix(c(1,2,3,4,5,6,7,8,9), ncol =3)
+rownames(m1) <- c("r1", "r2", "r3")
+colnames(m1) <-c("c1", "c2", "c3")
+m2 <- matrix(c(11, 22, 33, 44, 55, 66, 77, 88, 99), ncol =3)
+rownames(m2) <- c("r1", "r2", "r3")
+rownames(m2) <- c("c1", "c2", "c3")
+cat("Matrix m1: \n\n")
+m1
+cat("Matrix m2: \n\n")
+m2
+cat("\n\nm1 + m2\n\n")
+m1 + m2
+cat("\n\nm1 - m2\n\n")
+m1 - m2
+cat("\n\nm1 * m2\n\n")
+m1 * m2
+cat("\n\nm1 / m2\n\n")
+m1 / m2
+cat("\n\nm1 + m2\n\n")
+m1 %% m2
+```
+
+
